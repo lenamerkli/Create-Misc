@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "create-misc",
+  "version": "${version}",
+  "name": "Create Misc",
+  "description": "Compatibility with other mods from Create++",
+  "authors": [
+    "Merkli"
+  ],
+  "contact": {
+  },
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.merkli.create_misc.CreateMiscMod"
+    ]
+  },
+  "mixins": [
+    "create-misc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "create": "${create_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
